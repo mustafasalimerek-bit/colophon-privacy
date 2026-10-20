@@ -24,62 +24,41 @@
 <body>
 <main>
   <h1>Colophon — Privacy Policy</h1>
-  <p class="updated">Last updated: 2026-08-13</p>
+  <p class="updated">Last updated: 2026-10-20</p>
 
   <p class="lede">Colophon is a private study Bible. This policy explains, plainly,
-  what the app does with your information. The short version: <strong>your study never
-  leaves your device, and we have no servers for it to go to.</strong> The free tier shows
-  optional ads, served by Google — that part is described below in full.</p>
+  what the app does with your information. The short version: <strong>your reading and notes stay on your device unless you choose to export them. We have no servers.</strong> Colophon shows no
+  ads and links no advertising or analytics SDK of any kind. On iOS it does ask once for
+  tracking permission; the section below explains why, and why your answer changes
+  nothing.</p>
 
-  <h2>We collect nothing about your study</h2>
-  <p>Colophon has no servers, no accounts, and no sign-in. We do not collect, transmit,
-  store, sell, or share any personal information. We run no analytics and no crash reporting of our own. The app makes no network requests to us — there is no “us” on the other end of
-  a connection. Your Bible reading, your searches, your notes and your highlights are never
-  sent anywhere.</p>
-  <p>The one exception is the ad SDK described in the next section, which talks to Google —
-  never to us, and never about your study.</p>
+  <h2>We collect nothing</h2>
+  <p>Colophon has no servers, no accounts, and no sign-in. We do not receive, store, sell, or share your personal information. There is no analytics, no crash reporting,
+  and no advertising SDK in the app. The app makes no network requests to us — there is no
+  “us” on the other end of a connection. Your Bible reading, your searches, your notes and
+  your highlights are never sent anywhere.</p>
+  <p>Optional narration downloads contact GitHub as described below. No advertising identifier is read and no advertising consent form is shown.</p>
 
-  <h2>Ads (free tier only)</h2>
-  <p>Colophon’s study features — every translation, the Greek and Hebrew behind each word,
-  the lexicon, search, and unlimited notes — are free and carry no ads.</p>
-  <p>The seven things Colophon Pro adds (Backup &amp; Restore, the Study Desk, Notebooks,
-  Study Sheets, Import, every background beyond the plain page, and the in-app text size)
-  can be opened in two ways: by buying Colophon Pro once, or by choosing to watch a short
-  rewarded video, which opens one of them for four hours. Ads are <strong>never</strong>
-  shown while you read, and never without you asking for one.</p>
-  <p>Those videos are served by <strong>Google AdMob</strong>. Its SDK may process your
-  device’s advertising identifier, coarse device and app information, general
-  (non-precise) location derived from your IP address, your interactions with the ads
-  themselves, and crash, performance and other diagnostic data from the ad component — in
-  order to deliver and measure ads, to cap how often you see the same one, for analytics,
-  and to prevent fraud. This is what Google publishes for the SDK version Colophon links,
-  and our store privacy labels are filled in from that same list. Google acts as an
-  independent data controller for this. Its practices are described at
-  <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>
-  and <a href="https://business.safety.google/privacy/">business.safety.google/privacy</a>.</p>
-  <p>We receive no personal data from Google — only anonymous, aggregate earnings totals in
-  the AdMob console.</p>
-  <p><strong>Your choices.</strong></p>
-  <p>• <strong>Buy Colophon Pro.</strong> The ad layer then stops for good — no consent
-  form, no tracking prompt, no advertising identifier, no ad requests. It stops from the moment you buy.<br>
-  • <strong>In the EEA, the UK and Switzerland</strong> (and in US states with equivalent
-  laws), the app asks for your ad-consent choice on first use through Google’s consent
-  platform. You can change or withdraw it at any time in <strong>Settings → Ad privacy
-  options</strong>.<br>
-  • <strong>On iOS</strong>, the system asks separately whether Colophon may track you across
-  apps and websites. Declining is fully supported — you simply get non-personalised ads,
-  which unlock exactly the same features.<br>
-  • <strong>On Android</strong>, you can reset or delete your advertising ID in the system
-  settings; on iOS, tracking can be turned off in Settings → Privacy &amp; Security →
-  Tracking.</p>
-  <p>Declining every one of the above still leaves the whole app usable: study stays free,
-  your device’s own text-size setting always applies, and when you have asked for an ad and
-  it cannot be delivered, the feature opens anyway. Where ads cannot be served at all —
-  because you declined consent, for example — the workspace tools are offered for purchase
-  instead.</p>
+  <h2>The iOS tracking prompt</h2>
+  <p>On iOS, Colophon asks once for permission to track you. Whatever you answer, nothing
+  about the app changes: no advertising identifier is read, no data is collected, and there is nothing
+  to attach an identifier to.</p>
+  <p>The prompt is there for a bookkeeping reason, not a technical one. Colophon’s App Store
+  privacy record still lists a device identifier from the 1.1 ad layer. App Store Connect
+  refuses to remove that row — every attempt returns an error saying the app contains a
+  tracking permission string — and Apple requires any app whose record declares tracking to
+  present the permission prompt. Version 1.2.2 was rejected for having the record without
+  the prompt. So the prompt is back, honestly asked and honestly unused, while we keep
+  asking Apple to clear the record.</p>
+  <p>Android has no such prompt, no advertising-ID permission, and the same answer: nothing
+  is collected.</p>
+
+  <h2>No ads, no tracking</h2>
+  <p>Bible reading in every bundled translation, Scripture search, notes, highlights, bookmarks and tags are free. Colophon Pro features (including Listen, Word Study, lexicon search, cross references, Your Words, original-language Word of the Day details, Backup &amp; Restore, the Study Desk, Notebooks, Study Sheets, Import, backgrounds, and in-app text size) are opened by buying Colophon Pro once. Eligible existing readers keep previously retained background and text-size choices. There is no ad-supported tier and no way to watch anything in exchange for a feature.</p>
+  <p>Earlier versions of Colophon (1.1) offered a rewarded video, served by Google's AdMob SDK, as a second way into those features. That layer has been removed in full: the SDK, the consent form, the Android advertising-ID permission and the SKAdNetwork declarations are all gone from the app. The iOS permission prompt returned in 1.2.2, for the App Store bookkeeping reason described above and for nothing else — no advertising SDK came back with it. If you are still running 1.1, the previous version of this policy describes what that build did.</p>
 
   <h2>Your study stays on your device</h2>
-  <p>Everything you create in Colophon — your notes, highlights, bookmarks, and notebooks —
+  <p>Everything you create in Colophon — your notes, highlights, bookmarks, notebooks and word-study history —
   is stored only in a private database on your device. We never see it. It is not uploaded
   anywhere.</p>
 
@@ -92,6 +71,14 @@
   it is governed by whatever service you chose (for example, iCloud Drive or Google Drive),
   under their privacy policies, not ours.</p>
 
+  <h2>Audio downloads</h2>
+  <p>Audio downloads (Colophon Pro, optional): For the BSB recording by Barry Hays (CC0), Colophon fetches the book's audio from the public GitHub Releases of mustafasalimerek-bit/colophon-audio (GitHub is owned by Microsoft). As with any download, GitHub can see your device's IP address and which files were requested. Colophon receives nothing about you; GitHub shows us only how many times each file has been downloaded in total.</p>
+  <p>Downloaded audio is stored locally, excluded from device backups, and can be deleted per book or in full in Settings → Audio Bible. Playback uses local files. During continuous listening, the next book can download automatically, beginning near the end of the current book. Speech synthesis for KJV and WEB uses installed English voices on your device; it does not send the text to us or to a speech service. Android accepts only voices confirmed to work offline. BSB can also use device speech while narration is unavailable. Adding a new system voice may involve a separate download managed by your operating system.</p>
+
+  <h2>Word of the Day and local widget storage</h2>
+  <p>The optional Word of the Day widget receives a local cache of curated words from the app. Without Pro it receives only the English headword, language label and verse reference/identifier. Pro also supplies the Greek or Hebrew word, transliteration and verse text for supported widget sizes. It makes no network request for daily content.</p>
+  <p>On iOS the app and WidgetKit extension share this cache and a locally generated installation marker through the App Group group.com.erekstudio.colophon. The marker distinguishes this installation from stale widget data; it is not an advertising identifier and is never transmitted. Android stores equivalent widget data locally. Widget links open the app on your device, where purchase access is checked again. The cache is refreshed when you open the app and when purchase ownership changes. This does not introduce any new collection by Colophon.</p>
+
   <h2>Purchases</h2>
   <p>Colophon offers a one-time Pro unlock and optional tips through the App Store and Google
   Play. Those purchases are handled entirely by Apple and Google. We do not receive or store
@@ -103,9 +90,8 @@
   included in the app itself. Using them involves no data collection.</p>
 
   <h2>Children</h2>
-  <p>Colophon is not directed at children, and we ourselves collect no data from anyone,
-  including children. We set no ad targeting of our own; the only data involved is what Google’s SDK
-  processes, described above.</p>
+  <p>Colophon is not directed at children, and it collects no data from anyone, including
+  children. There is no advertising and no profiling of any kind.</p>
 
   <h2>Changes</h2>
   <p>If this policy ever changes, the updated version will be posted here with a new
