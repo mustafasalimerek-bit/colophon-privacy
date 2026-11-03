@@ -14,35 +14,48 @@
   .updated { color:var(--muted); font-size:0.95rem; margin-top:6px; margin-bottom:28px; }
   h2 { font-size:1.25rem; font-weight:600; color:var(--rubric); margin:34px 0 10px; }
   p { margin:12px 0; }
+  ul { margin:8px 0 12px 22px; }
+  li { margin:6px 0; }
   .lede { font-size:1.1rem; }
   strong { font-weight:700; }
   a { color:var(--rubric); }
   footer { margin-top:48px; padding-top:20px; border-top:1px solid var(--hair);
     color:var(--muted); font-size:0.95rem; }
+  body { overflow-wrap:break-word; }
+  footer nav { margin-bottom:8px; }
+  footer nav a { white-space:nowrap; }
+  footer nav a[aria-current="page"] { color:var(--ink); text-decoration:none; }
+  footer p { margin:0; }
 </style>
 </head>
 <body>
 <main>
   <h1>Colophon — Privacy Policy</h1>
-  <p class="updated">Last updated: 2026-10-20</p>
+  <p class="updated">Last updated: 2026-11-03 (version 1.5)</p>
 
   <p class="lede">Colophon is a private study Bible. This policy explains, plainly,
-  what the app does with your information. The short version: <strong>your reading and notes stay on your device unless you choose to export them. We have no servers.</strong> Colophon shows no
-  ads and links no advertising or analytics SDK of any kind. On iOS it does ask once for
-  tracking permission; the section below explains why, and why your answer changes
-  nothing.</p>
+  what the app does with your information. The short version: <strong>your reading, notes
+  and highlights stay on your device unless you choose to export them, and none of it needs
+  an account.</strong> Two optional parts of Colophon use Erek Studio’s server: Sunday
+  Worship (Colophon Pro) downloads each week’s service from it — the same text for everyone,
+  with no sign-in — and Fellowship, the optional Prayer Wall and chat, needs sign-in and keeps
+  what you share there on Erek Studio’s chat server. Both are described below. Colophon shows
+  no ads and links no advertising or analytics SDK of any kind. On iOS it does ask once for tracking permission;
+  the section below explains why, and why your answer changes nothing.</p>
 
-  <h2>We collect nothing</h2>
-  <p>Colophon has no servers, no accounts, and no sign-in. We do not receive, store, sell, or share your personal information. There is no analytics, no crash reporting,
-  and no advertising SDK in the app. The app makes no network requests to us — there is no
-  “us” on the other end of a connection. Your Bible reading, your searches, your notes and
-  your highlights are never sent anywhere.</p>
-  <p>Optional narration downloads contact GitHub as described below. No advertising identifier is read and no advertising consent form is shown.</p>
+  <h2>Outside Fellowship and Sunday Worship, we collect nothing</h2>
+  <p>Reading in every bundled translation, Scripture search, notes, highlights, bookmarks,
+  tags, notebooks, word study, Confession and the rest of Colophon Pro need no Colophon
+  account and no sign-in. We do not receive or store anything you do with them, and we never
+  sell your personal information. There is no analytics, no crash reporting, and no advertising SDK in the app.
+  Your Bible reading, your searches, your notes and your highlights are never sent
+  anywhere.</p>
+  <p>Optional narration downloads contact GitHub, and Sunday Worship’s weekly download contacts Erek Studio’s server, as described below. No advertising identifier is read and no advertising consent form is shown. If you choose to use Fellowship, the “Fellowship (optional)” section below says exactly what it keeps, why, and for how long.</p>
 
   <h2>The iOS tracking prompt</h2>
   <p>On iOS, Colophon asks once for permission to track you. Whatever you answer, nothing
-  about the app changes: no advertising identifier is read, no data is collected, and there is nothing
-  to attach an identifier to.</p>
+  about the app changes: no advertising identifier is read, nothing is used for tracking, and
+  there is nothing to attach an identifier to.</p>
   <p>The prompt is there for a bookkeeping reason, not a technical one. Colophon’s App Store
   privacy record still lists a device identifier from the 1.1 ad layer. App Store Connect
   refuses to remove that row — every attempt returns an error saying the app contains a
@@ -51,16 +64,26 @@
   the prompt. So the prompt is back, honestly asked and honestly unused, while we keep
   asking Apple to clear the record.</p>
   <p>Android has no such prompt, no advertising-ID permission, and the same answer: nothing
-  is collected.</p>
+  is collected for tracking or advertising.</p>
 
   <h2>No ads, no tracking</h2>
-  <p>Bible reading in every bundled translation, Scripture search, notes, highlights, bookmarks and tags are free. Colophon Pro features (including Listen, Word Study, lexicon search, cross references, Your Words, original-language Word of the Day details, Backup &amp; Restore, the Study Desk, Notebooks, Study Sheets, Import, backgrounds, and in-app text size) are opened by buying Colophon Pro once. Eligible existing readers keep previously retained background and text-size choices. There is no ad-supported tier and no way to watch anything in exchange for a feature.</p>
+  <p>Bible reading in every bundled translation, Scripture search, notes, highlights, bookmarks and tags are free. Colophon Pro features (including Listen, Word Study, lexicon search, cross references, Your Words, original-language Word of the Day details, Sunday Worship, Confession, Backup &amp; Restore, the Study Desk, Notebooks, Study Sheets, Import, backgrounds, and in-app text size) are opened by buying Colophon Pro once; while a Fellowship Chat+ subscription is active, they are open too. Eligible existing readers keep previously retained background and text-size choices. There is no ad-supported tier and no way to watch anything in exchange for a feature.</p>
   <p>Earlier versions of Colophon (1.1) offered a rewarded video, served by Google's AdMob SDK, as a second way into those features. That layer has been removed in full: the SDK, the consent form, the Android advertising-ID permission and the SKAdNetwork declarations are all gone from the app. The iOS permission prompt returned in 1.2.2, for the App Store bookkeeping reason described above and for nothing else — no advertising SDK came back with it. If you are still running 1.1, the previous version of this policy describes what that build did.</p>
 
   <h2>Your study stays on your device</h2>
   <p>Everything you create in Colophon — your notes, highlights, bookmarks, notebooks and word-study history —
   is stored only in a private database on your device. We never see it. It is not uploaded
   anywhere.</p>
+
+  <h2>Confession stays in memory</h2>
+  <p>Confession (Colophon Pro) is a private, guided time of prayer. Nothing you write in
+  Confession is saved or sent anywhere: it is held only in the app’s memory while the screen
+  is open, and cleared when you let it go, when you leave the screen, and when the app goes to
+  the background. It is never written to your device’s storage, backups or logs, and nothing
+  about it reaches us. While Confession is open, the app switcher shows a plain cover instead
+  of the page, and on Android the screen cannot be captured. Colophon also asks the keyboard
+  not to learn from what you type there; the keyboard itself, including dictation, is provided
+  by your operating system under its own privacy policy.</p>
 
   <h2>Backups are files you control</h2>
   <p>The Pro “Backup &amp; Restore” feature writes a single file containing your study and
@@ -75,14 +98,106 @@
   <p>Audio downloads (Colophon Pro, optional): For the BSB recording by Barry Hays (CC0), Colophon fetches the book's audio from the public GitHub Releases of mustafasalimerek-bit/colophon-audio (GitHub is owned by Microsoft). As with any download, GitHub can see your device's IP address and which files were requested. Colophon receives nothing about you; GitHub shows us only how many times each file has been downloaded in total.</p>
   <p>Downloaded audio is stored locally, excluded from device backups, and can be deleted per book or in full in Settings → Audio Bible. Playback uses local files. During continuous listening, the next book can download automatically, beginning near the end of the current book. Speech synthesis for KJV and WEB uses installed English voices on your device; it does not send the text to us or to a speech service. Android accepts only voices confirmed to work offline. BSB can also use device speech while narration is unavailable. Adding a new system voice may involve a separate download managed by your operating system.</p>
 
+  <h2>Sunday Worship (Colophon Pro, optional)</h2>
+  <p>Sunday Worship brings an hour of Scripture and prayer each Sunday in twelve parts, five
+  minutes apart — in the app and, once you turn it on, as notifications at a start time you
+  choose. The prayers and reflections are written once a week for everyone with the help of
+  AI; nothing about you goes into them, and every passage is shown from the Berean Standard
+  Bible inside the app.</p>
+  <p><strong>What is sent, and to whom.</strong> When you open Sunday Worship, and — while it
+  is turned on — when you open Colophon from Thursday each week, Colophon downloads that
+  Sunday’s service from Erek Studio’s server, hosted by Cloudflare. Like any download, the
+  server sees your device’s IP address, the date of the Sunday requested and the app version.
+  Nothing else is sent: no sign-in, no identifier, nothing you read, note or write. The last
+  few Sundays’ services are kept on your device, so last Sunday’s is there all week; older
+  ones are deleted. Without a download, Colophon uses an order of worship that ships inside
+  the app.</p>
+  <p><strong>On your device.</strong> The twelve messages are local notifications, scheduled
+  by your device at the time you choose; Colophon asks for permission to send notifications
+  only when you turn Sunday Worship on, and no push token is created for them. Your start time
+  stays on your device. Your time zone is read from your device’s settings to place the hour
+  on your clock; it is never sent, and no location permission is used.</p>
+
   <h2>Word of the Day and local widget storage</h2>
-  <p>The optional Word of the Day widget receives a local cache of curated words from the app. Without Pro it receives only the English headword, language label and verse reference/identifier. Pro also supplies the Greek or Hebrew word, transliteration and verse text for supported widget sizes. It makes no network request for daily content.</p>
+  <p>The optional Word of the Day widget receives a local cache of curated words from the app. Without Pro it receives only the English headword, language label and verse reference/identifier. Pro (or Fellowship’s Chat+, while it is active) also supplies the Greek or Hebrew word, transliteration and verse text for supported widget sizes. It makes no network request for daily content.</p>
   <p>On iOS the app and WidgetKit extension share this cache and a locally generated installation marker through the App Group group.com.erekstudio.colophon. The marker distinguishes this installation from stale widget data; it is not an advertising identifier and is never transmitted. Android stores equivalent widget data locally. Widget links open the app on your device, where purchase access is checked again. The cache is refreshed when you open the app and when purchase ownership changes. This does not introduce any new collection by Colophon.</p>
+
+  <h2>Fellowship (optional)</h2>
+  <p>Fellowship is an optional community inside Colophon: a Prayer Wall, where members post
+  prayer requests and pray for one another, a Fellowship chat room, and private messages
+  between people who share that room. Only Colophon users can join, and a Fellowship account
+  is separate from any chat account in Erek Studio’s games. Fellowship is for adults (18 and
+  over). Nothing in it is needed to read the Bible, keep notes or use Colophon Pro, and
+  nothing below applies unless you sign in to it. On Android, Fellowship is not available
+  yet.</p>
+  <p><strong>What Fellowship keeps, and only if you use it:</strong></p>
+  <ul>
+    <li><strong>Your sign-in:</strong> the account identifier that Sign in with Apple (or, when
+    Fellowship comes to Android, Sign in with Google) gives us. We do not keep the email
+    address a sign-in may share.</li>
+    <li><strong>Your profile:</strong> your nickname, your birth year (to keep Fellowship for
+    adults), and any optional details you add, such as a display name or a photo.</li>
+    <li><strong>What you share:</strong> prayer requests, comments, messages in the Fellowship
+    room, private messages, and your “I prayed” taps.</li>
+    <li><strong>Safety records:</strong> reports you make or that are made about you, the people
+    you block, and the outcome of any moderation.</li>
+    <li><strong>A push token,</strong> if you allow notifications, so the server can tell your
+    device that someone prayed for your request or wrote to you. Notifications never contain
+    the text of a prayer request or comment.</li>
+    <li><strong>Your Chat+ status:</strong> the App Store’s or Google Play’s record of a Chat+
+    subscription (transaction ID, product and expiry), so the server can verify it. We never
+    receive your payment details.</li>
+  </ul>
+  <p><strong>Why:</strong> to run Fellowship — to sign you in, show what you share to the
+  members you share it with, deliver notifications, verify Chat+, apply the community rules
+  and the age limit, and keep the community safe.</p>
+  <p><strong>Who processes it for us:</strong></p>
+  <ul>
+    <li><strong>Cloudflare</strong> hosts Erek Studio’s chat server and its database.</li>
+    <li><strong>Anthropic</strong> (United States) runs the automated safety check: the text of
+    prayer requests, comments and messages is checked by Anthropic’s AI for contact details,
+    scams, harassment and signs of crisis, and in prayer requests and their comments the full
+    names and specific places of other people are replaced with general words (“my sister”)
+    before they are shown. Fellowship asks for your consent to this check before you can
+    join.</li>
+    <li><strong>Apple and Google</strong> provide sign-in, purchases and the delivery of push
+    notifications, under their own privacy policies.</li>
+  </ul>
+  <p>No advertising or analytics company receives anything from Fellowship.</p>
+  <p><strong>Sensitive information.</strong> Fellowship is a Christian community, so taking part
+  can reveal your religious beliefs, and a prayer request may say something about your health
+  or someone else’s. What you share is your choice. It is processed only to run Fellowship —
+  shown to the members you share it with and checked as described above — and never used for
+  advertising or profiling. When you join, Fellowship asks separately for your explicit
+  consent to this processing. Please don’t write full names, addresses or medical details;
+  the composer reminds you.</p>
+  <p><strong>How long it is kept:</strong></p>
+  <ul>
+    <li><strong>Prayer requests and their comments</strong> are deleted from the server 30 days
+    after the request was posted. You can delete your own request or comment at any time; its
+    text is removed at once.</li>
+    <li><strong>Messages in the Fellowship room and private messages:</strong> the server deletes
+    a message’s text 180 days after it was sent.</li>
+    <li><strong>Reports:</strong> when a message is reported, a copy of it and of the messages
+    around it is kept for safety review for up to 365 days, then deleted. A report’s copy of a
+    prayer request or comment is deleted with the request, after 30 days.</li>
+    <li><strong>Your account:</strong> you can delete it at any time in Fellowship’s settings, and
+    the deletion is immediate: your profile, sign-in, photo and push tokens are deleted, the
+    text of your messages is removed, and your conversations close. Report copies follow the
+    365-day rule above, and a ban or age block stays attached to the sign-in so that deleting
+    is not a way back in.</li>
+  </ul>
+  <p><strong>Your choices:</strong> Fellowship is optional — everything else in Colophon works
+  without it. You can post a request without details (“Unspoken request”) or hide your name on
+  it, leave notifications off, block or report anyone, and delete your account in Fellowship’s
+  settings. Questions: the address below.</p>
 
   <h2>Purchases</h2>
   <p>Colophon offers a one-time Pro unlock and optional tips through the App Store and Google
-  Play. Those purchases are handled entirely by Apple and Google. We do not receive or store
-  your payment details. Apple’s and Google’s privacy policies govern that transaction.</p>
+  Play, and Fellowship offers an optional Chat+ subscription. These purchases are handled by
+  Apple and Google; we never receive or store your payment details. For Chat+, the chat server
+  receives the store’s record of the subscription to verify it, as described under
+  Fellowship. Apple’s and Google’s privacy policies govern the transactions.</p>
 
   <h2>Bible text and study data</h2>
   <p>The Scripture texts and study data bundled with the app (translations, the
@@ -90,8 +205,9 @@
   included in the app itself. Using them involves no data collection.</p>
 
   <h2>Children</h2>
-  <p>Colophon is not directed at children, and it collects no data from anyone, including
-  children. There is no advertising and no profiling of any kind.</p>
+  <p>Colophon is not directed at children. Its Bible and study tools collect no data from
+  anyone, including children; Sunday Worship’s weekly download is described above. Fellowship is for adults: it asks for your birth year and is
+  closed to anyone under 18. There is no advertising and no profiling of any kind.</p>
 
   <h2>Changes</h2>
   <p>If this policy ever changes, the updated version will be posted here with a new
@@ -100,7 +216,10 @@
   <h2>Contact</h2>
   <p>Questions about this policy: <a href="mailto:mustafasalimerek@gmail.com">mustafasalimerek@gmail.com</a></p>
 
-  <footer>Colophon · Erek Studio · a private study Bible that reads offline.</footer>
+  <footer>
+    <nav aria-label="Colophon legal pages"><a href="./" aria-current="page">Privacy Policy</a> · <a href="community.html">Fellowship Community Rules</a> · <a href="fellowship-terms.html">Fellowship Terms of Use</a></nav>
+    <p>Colophon · Erek Studio · a private study Bible that reads offline, with an optional Fellowship.</p>
+  </footer>
 </main>
 </body>
 </html>
