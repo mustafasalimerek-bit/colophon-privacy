@@ -31,7 +31,7 @@
 <body>
 <main>
   <h1>Colophon — Privacy Policy</h1>
-  <p class="updated">Last updated: 2026-11-03 (version 1.5)</p>
+  <p class="updated">Last updated: 2026-11-04 (version 1.5)</p>
 
   <p class="lede">Colophon is a private study Bible. This policy explains, plainly,
   what the app does with your information. The short version: <strong>your reading, notes
@@ -113,8 +113,8 @@
   ones are deleted. Without a download, Colophon uses an order of worship that ships inside
   the app.</p>
   <p><strong>On your device.</strong> The twelve messages are local notifications, scheduled
-  by your device at the time you choose; Colophon asks for permission to send notifications
-  only when you turn Sunday Worship on, and no push token is created for them. Your start time
+  by your device at the time you choose; for these, Colophon asks for permission to send
+  notifications only when you turn Sunday Worship on, and no push token is created. Your start time
   stays on your device. Your time zone is read from your device’s settings to place the hour
   on your clock; it is never sent, and no location permission is used.</p>
 
@@ -128,13 +128,14 @@
   between people who share that room. Only Colophon users can join, and a Fellowship account
   is separate from any chat account in Erek Studio’s games. Fellowship is for adults (18 and
   over). Nothing in it is needed to read the Bible, keep notes or use Colophon Pro, and
-  nothing below applies unless you sign in to it. On Android, Fellowship is not available
-  yet.</p>
+  nothing below applies unless you sign in to it. It works the same way on iPhone, iPad and
+  Android.</p>
   <p><strong>What Fellowship keeps, and only if you use it:</strong></p>
   <ul>
-    <li><strong>Your sign-in:</strong> the account identifier that Sign in with Apple (or, when
-    Fellowship comes to Android, Sign in with Google) gives us. We do not keep the email
-    address a sign-in may share.</li>
+    <li><strong>Your sign-in:</strong> the account identifier that Sign in with Apple (on iPhone
+    and iPad) or Sign in with Google (on Android) gives us. We do not keep the email address,
+    name or picture a sign-in may share: Google’s sign-in token carries them, and the server
+    reads only the identifier.</li>
     <li><strong>Your profile:</strong> your nickname, your birth year (to keep Fellowship for
     adults), and an optional display name. Fellowship has no profile photos, and it never asks
     for your country or city.</li>
@@ -143,11 +144,19 @@
     <li><strong>Safety records:</strong> reports you make or that are made about you, the people
     you block, and the outcome of any moderation.</li>
     <li><strong>A push token,</strong> if you allow notifications, so the server can tell your
-    device that someone prayed for your request or wrote to you. Notifications never contain
-    the text of a prayer request or comment.</li>
+    device that someone prayed for your request or wrote to you. Fellowship registers a device
+    only after you sign in to it, and only while notifications are allowed for Colophon (on
+    Android one permission covers Sunday Worship and Fellowship). On iPhone and iPad the token
+    is Apple’s push token for the app. On Android, notifications come through Google’s Firebase
+    Cloud Messaging: Firebase gives this installation of Colophon an installation ID, which
+    Google confirms with an installation token, and the server keeps the installation ID as
+    the push token. Colophon contains no other Firebase service and no analytics.
+    Notifications never contain the text of a prayer request, comment or message, or anyone’s
+    name.</li>
     <li><strong>Your Chat+ status:</strong> the App Store’s or Google Play’s record of a Chat+
-    subscription (transaction ID, product and expiry), so the server can verify it. We never
-    receive your payment details.</li>
+    subscription (transaction ID, product and expiry), so the server can verify it. On Google
+    Play the record includes the purchase token, which the server keeps so it can ask Google
+    about renewals, cancellations and refunds. We never receive your payment details.</li>
   </ul>
   <p><strong>Why:</strong> to run Fellowship — to sign you in, show what you share to the
   members you share it with, deliver notifications, verify Chat+, apply the community rules
@@ -162,7 +171,9 @@
     before they are shown. Fellowship asks for your consent to this check before you can
     join.</li>
     <li><strong>Apple and Google</strong> provide sign-in, purchases and the delivery of push
-    notifications, under their own privacy policies.</li>
+    notifications, under their own privacy policies: on iPhone and iPad, Sign in with Apple,
+    the App Store and Apple’s push service; on Android, Sign in with Google, Google Play and
+    Firebase Cloud Messaging.</li>
   </ul>
   <p>No advertising or analytics company receives anything from Fellowship.</p>
   <p><strong>Sensitive information.</strong> Fellowship is a Christian community, so taking part
@@ -187,12 +198,17 @@
     your messages, prayer requests and comments is removed at once (with the comments and
     “I prayed” taps under your requests, and any report copies of them), and your conversations
     close. Other report copies follow the 365-day rule above, and a ban or age block stays
-    attached to the sign-in so that deleting is not a way back in.</li>
+    attached to the sign-in so that deleting is not a way back in. The store’s record of a
+    Chat+ subscription (on Google Play, with its purchase token) stays without a link to any
+    account, so that a subscription you still pay for can be restored to a new Fellowship
+    account. If you no longer have the app, you can ask us by email to delete your account:
+    <a href="https://mustafasalimerek-bit.github.io/colophon-privacy/delete.html">Deleting your Fellowship account</a> says how, and what is deleted
+    and what is kept.</li>
   </ul>
   <p><strong>Your choices:</strong> Fellowship is optional — everything else in Colophon works
   without it. You can post a request without details (“Unspoken request”) or hide your name on
   it, leave notifications off, block or report anyone, and delete your account in Fellowship’s
-  settings. Questions: the address below.</p>
+  settings, or by email if you no longer have the app. Questions: the address below.</p>
 
   <h2>Purchases</h2>
   <p>Colophon offers a one-time Pro unlock and optional tips through the App Store and Google
@@ -219,7 +235,7 @@
   <p>Questions about this policy: <a href="mailto:mustafasalimerek@gmail.com">mustafasalimerek@gmail.com</a></p>
 
   <footer>
-    <nav aria-label="Colophon legal pages"><a href="./" aria-current="page">Privacy Policy</a> · <a href="community.html">Fellowship Community Rules</a> · <a href="fellowship-terms.html">Fellowship Terms of Use</a></nav>
+    <nav aria-label="Colophon legal pages"><a href="./" aria-current="page">Privacy Policy</a> · <a href="community.html">Fellowship Community Rules</a> · <a href="fellowship-terms.html">Fellowship Terms of Use</a> · <a href="delete.html">Delete your Fellowship account</a></nav>
     <p>Colophon · Erek Studio · a private study Bible that reads offline, with an optional Fellowship.</p>
   </footer>
 </main>
